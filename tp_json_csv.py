@@ -2,19 +2,19 @@ import json
 from pprint import pprint
 
 def main():
-    
+    all_todos = []
     with open("todos.csv","r") as f:
         lines = [line.strip() for line in f.readlines()]
         header = lines[0].split(';')
         rows = lines[1:]
         for row in rows:
             values = row.split(';')
-            print(header)
-            print(values)
-            print(dict(zip(header,values)))
+            todo = dict(zip(header,values))
+            todo['projects'] = ['project1','project1','project1']
+            all_todos.append(todo)
 
-            print()
-        
+    with open("all_todos.json","w") as f:
+        json.dump(all_todos,f,indent=4)
 
 def main_write_csv():
     todos=[]
