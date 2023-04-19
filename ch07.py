@@ -6,7 +6,8 @@ def main():
     a=2
     b=3
     c=a/b
-    result = f"résultat de {a} / {b}  = {c:30.2%}"
+    # result = f"résultat de {a} / {b}  = {c:30.2%}"
+    result = f"résultat de {a} / {b}  = {c:.2%}"
     print(result)
 
     s = "toto"
