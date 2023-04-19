@@ -11,6 +11,8 @@ def main():
             values = row.split(';')
             print(header)
             print(values)
+            print(dict(zip(header,values)))
+
             print()
         
 
