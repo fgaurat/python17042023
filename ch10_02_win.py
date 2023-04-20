@@ -6,14 +6,13 @@ from TodoDAO import TodoDAO
 
 def main():
     parser = argparse.ArgumentParser(description='TP TKInter DB.')
-    parser.add_argument('config_file',help="Configuration file")
+    parser.add_argument('-config_file',help="Configuration file",default='config.ini')
     args = parser.parse_args()
     
     config = configparser.ConfigParser()
     config.read(args.config_file)
 
     data_file = config['DB']['data_file']
-    dao = TodoDAO(data_file)
 
 
     root = Tk()
