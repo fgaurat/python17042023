@@ -20,3 +20,11 @@ https://www.mockaroo.com/
 https://github.com/fgaurat/data_formation
 
 https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf
+
+https://github.com/hoffstadt/DearPyGui
+
+https://www.qt.io/qt-for-python
+
+https://streamlit.io/
+
+https://dash.plotly.com/
